@@ -1,0 +1,21 @@
+class Rectangle {
+    int length;
+    int breadth;
+
+    Rectangle(int length, int breadth) {
+        this.length = length;      // using this to refer to instance variable
+        this.breadth = breadth;    // using this to refer to instance variable
+    }
+
+    int calculateArea() {
+        return length * breadth;
+    }
+
+    public static void main(String[] args) {
+        Rectangle r = new Rectangle(10, 5);
+        int area = r.calculateArea();
+        System.out.println("Area of Rectangle: " + area);
+    }
+}
+OUTPUT:
+Area of Rectangle: 50
